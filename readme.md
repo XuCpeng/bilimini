@@ -10,19 +10,27 @@
 
 ![demo](https://github.com/chitosai/bilimini/blob/master/images/demo.gif)
 
+## install
+
 下载地址：[百度网盘](https://pan.baidu.com/s/1jIHnRk6)
+
+Linux can be installed locally using Snap (packed by [XuCpeng](https://github.com/XuCpeng/bilimini)):
+
+```shell
+snap install bilimini_x.x.x_amd64.snap --dangerous
+```
 
 --
 
 ## For Developers
 
-```
-npm install   
+```shell
+npm install
 npm start
 ```
 
-使用electron-builder打包：
+使用electron-builder 打包：
 
-```
+```shell
 npm run dist
 ```
