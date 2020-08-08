@@ -29,8 +29,16 @@ function openMainWindow() {
   // 根据透明度设置决定是否要创建transparent窗口
   // 不论在windows还是在mac下，正常窗口都会比transparent窗口多一个好看的阴影
   // 所以我们不希望为了方便始终使用transparent
-  var opacity = utils.config.get('opacity'),
-      windowParams = {width: 375, height: 500, frame: false};
+  var opacity = utils.config.get("opacity"),
+    windowParams = {
+      width: 375,
+      height: 500,
+      frame: false,
+      webPreferences: {
+        nodeIntegration: true,
+        webviewTag: true,
+      },
+    };
   if( opacity < 1 ) {
     windowParams.transparent = true;
   }
