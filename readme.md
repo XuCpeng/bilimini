@@ -16,7 +16,7 @@
 
 Linux 发行版可以使用[Snap](https://snapcraft.io/docs/installing-snapd)进行本地安装 (packed by [XuCpeng](https://github.com/XuCpeng/bilimini)):
 
-```shell
+```bash
 snap install bilimini_x.x.x_amd64.snap --dangerous
 ```
 
